@@ -15,7 +15,8 @@ if re.match(r"^https?:\/\/", URL):
 
     except urllib.request.URLError as reqerr:
         print('Not found: ', URL)
-        print('Error Reason: ' + reqerr.reason)
+        # print('Error Reason: ' + reqerr.reason)
+        print(reqerr.reason)
 
 else:
     print('Wrong URL')
