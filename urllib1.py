@@ -7,8 +7,10 @@ def main():
     print('Result code: {0}'.format(result.status))
 
     print('Headers: ------------------')
+    print(result.getheaders())
 
     print('Returned data: ------------')
+    print(result.read())
 
 if __name__ == '__main__':
     main()
