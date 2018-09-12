@@ -9,11 +9,15 @@ def main():
         'is_auther': True,
     }
 
+    data = urllib.parse.urlencode(args)
 
-    result = urllib.request.urlopen(url)
+
+
+    result = urllib.request.urlopen(url + '?' + data)
 
     print('Result code: {0}'.format(result.status))
     print('Returned data: ------------------')
+    print(result.read().decode('utf-8'))
 
 
 
