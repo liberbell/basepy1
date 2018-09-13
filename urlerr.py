@@ -2,8 +2,8 @@ import urllib.request
 from http import HTTPStatus
 
 def main():
-    url = 'http://httpbin.org/html'
-    # url = 'http://httpbin.org/status/404'
+    # url = 'http://httpbin.org/html'
+    url = 'http://httpbin.org/status/404'
     # url = 'http://no-such-server.org'
 
     result = urllib.request.urlopen(url)
