@@ -14,7 +14,7 @@ def main():
             print(result.read().decode('utf-8'))
 
     except HTTPError as err:
-        print('Error: {0}'.format.err.code)
+        print('Error: {0}'.format(err.code))
 
 
 if __name__ == '__main__':
