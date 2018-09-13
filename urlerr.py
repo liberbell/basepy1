@@ -1,4 +1,5 @@
 import urllib.request
+from http import HTTPStatus
 
 def main():
     url = 'http://httpbin.org/html'
@@ -7,7 +8,7 @@ def main():
 
     result = urllib.request.urlopen(url)
     print('Result Code: {0}'.format(result.status))
-    if (result.getcode() == 200):
+    if (result.getcode() == HTTPStatus.OK):
         print(result.read().decode('utf-8'))
 
 
