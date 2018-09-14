@@ -8,6 +8,13 @@ def printResults(resData):
     print('\n')
 
     print('Headers: ----------------------')
+    print(resData.headers)
+    print('\n')
+
+    print('Return data: ------------------')
+    print(resData.content)
 
 
-if __name__
+
+if __name__ == '__main__':
+    main()
