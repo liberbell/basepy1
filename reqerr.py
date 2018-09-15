@@ -6,7 +6,7 @@ def main():
     printResults(result)
 
 def printResults(resData):
-    print('Result code: {0}'.format(result.status))
+    print('Result code: {0}'.format(resData.status_code))
     print('\n')
 
     print('Returned data: ------------')
