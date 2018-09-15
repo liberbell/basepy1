@@ -5,7 +5,7 @@ def main():
     try:
         # url = 'http://httpbin.org/status/404'
         url = 'http://httpbin.org/delay/5'
-        result = requests.get(url, Timeout=2)
+        result = requests.get(url, timeout=2)
         result.raise_for_status()
         printResults(result)
 
