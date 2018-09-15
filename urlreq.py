@@ -12,7 +12,7 @@ def main():
         'key1': 'value1',
         'key2': 'value2'
     }
-    result = requests.post(url, params=dataValues)
+    result = requests.post(url, data=dataValues)
     printResults(result)
 
 
