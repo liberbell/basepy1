@@ -5,8 +5,8 @@ def main():
     result = requests.get(url)
     # printResults(result)
 
-    # url = 'http://httpbin.org/post'
-    url = 'http://httpbin.org/get'
+    # url = 'http://httpbin.org/get'
+    url = 'http://httpbin.org/post'
 
     dataValues = {
         'key1': 'value1',
