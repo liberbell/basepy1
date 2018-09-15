@@ -1,10 +1,10 @@
 import requests
-from requests import HTTPError
+from requests import HTTPError, Timeout
 
 def main():
     try:
         url = 'http://httpbin.org/status/404'
-        result = requests.get(url)
+        result = requests.get(url, Timeout=2)
         result.raise_for_status()
         printResults(result)
 
