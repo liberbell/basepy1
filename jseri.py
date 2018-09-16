@@ -1,7 +1,7 @@
 import json
 
 def main():
-    jsonStr = '''{
+    pythonData = '''{
         "sandwitch" : "Reuben",
         "toasted" : true,
         "toppings" : [
