@@ -12,7 +12,7 @@ def main():
         "Price" : 8.99
     }'''
 
-    jsonStr = json.dumps(pythonData)
+    jsonStr = json.dumps(pythonData, indent=4)
 
     print('JSON Data: ------------------')
     print(jsonStr)
