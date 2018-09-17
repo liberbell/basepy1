@@ -13,5 +13,8 @@ def main():
 
     print('There are {0} slides'.format(len(dataobj['slideshow']['slides'])))
 
+    for slide in dataobj['slidesho']['slides']:
+        print('slide: ' + slide)
+
 if __name__ == '__main__':
     main()
