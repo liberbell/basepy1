@@ -14,5 +14,13 @@ def main():
 
     data = json.loads(jsonStr)
 
+    print('Sandwitch: ' + data['sandwitch'])
+    if (data['toasted']):
+        print(('And it`s toasted!'))
+
+    for topping in data['toppings']:
+        print('Topping: ' + topping)
+
+
 if __name__ == '__main__':
     main()
