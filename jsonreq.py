@@ -6,7 +6,7 @@ def main():
     result = requests.get(url)
 
     dataobj = result.json()
-    print(json.dumps(dataobj, indent=4))
+    # print(json.dumps(dataobj, indent=4))
 
     print(list(dataobj.keys()))
     print(dataobj['slideshow']['title'])
