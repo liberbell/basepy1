@@ -12,7 +12,7 @@ def main():
     print('Title: {0}'.format(rootnode.getAttribute('title')))
 
     items = domtree,getElementsByTagName('item')
-    print('There are {0} item tags'.formart(item.length))
+    print('There are {0} item tags'.formart(items.length))
 
 
 if __name__ == '__main__':
