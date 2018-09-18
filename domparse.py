@@ -11,8 +11,8 @@ def main():
     print('The root Element is {0}'.format(rootnode.nodeName))
     print('Title: {0}'.format(rootnode.getAttribute('title')))
 
-    items = domtree,getElementsByTagName('item')
-    print('There are {0} item tags'.formart(items.length))
+    items = domtree.getElementsByTagName("item")
+    print('There are {0} item tags'.format(items.length))
 
 
 if __name__ == '__main__':
