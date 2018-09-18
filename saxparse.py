@@ -25,9 +25,11 @@ class MycontentHandler(xml.sax.ContentHandler):
         if self.isInTitle:
             print('Title: ' + chars)
 
+    # def start
     def startDocument(self):
         print('About to tart!')
 
+    # def end
     def endDocument(self):
         print('Finishing up!')
 
