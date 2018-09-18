@@ -11,6 +11,7 @@ def main():
 
     url = 'http://httpbin.org/xml'
     result = requests.get(url)
+    print(result.text)
 
     print('There were {0} slide elements'.format(handler.slideCount))
     print('There were {0} item elements'.format(handler.itemCount))
