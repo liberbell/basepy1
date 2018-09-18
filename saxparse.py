@@ -23,6 +23,8 @@ def main():
     result = requests.get(url)
     print(result.text)
 
+    xml.sax.parseString(result.text, handler)
+
     print('There were {0} slide elements'.format(handler.slideCount))
     print('There were {0} item elements'.format(handler.itemCount))
 
