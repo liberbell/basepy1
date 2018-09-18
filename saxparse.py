@@ -8,7 +8,7 @@ class MycontentHandler(xml.sax.ContentHandler):
 
     def startElement(self, tagName, attrs):
         if tagName == 'slideshow':
-            print('Slideshow title: ' + attrs['titel'])
+            print('Slideshow title: ' + attrs['title'])
 
     def startDocument(self):
         print('About to tart!')
@@ -21,7 +21,7 @@ def main():
 
     url = 'http://httpbin.org/xml'
     result = requests.get(url)
-    print(result.text)
+    # print(result.text)
 
     xml.sax.parseString(result.text, handler)
 
