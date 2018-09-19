@@ -6,7 +6,7 @@ def main():
     result = requests.get(url)
 
     doc = etree.fromstring(result.content)
-    print(result.text)
+    # print(result.text)
 
     print(doc.tag)
     print(doc.attrib['title'])
